@@ -1,0 +1,6 @@
+*sim01 transient response
+.include ../AE01.10.09.001.cir
+.step param VCTRL list 1 2 3
+.tran 0 200m 0 startup uic
+.backanno
+.end

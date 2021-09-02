@@ -1,0 +1,14 @@
+.title KiCad schematic
+.include "model/C2012X7R1E105K125AB_p.mod"
+.include "model/C2012X7R2A104K125AE_p.mod"
+.include "model/max976.fam"
+XU2 /INP /RC VDD 0 /OUT max976
+V2 VDD 0 5
+XU3 VDD 0 C2012X7R2A104K125AE_p
+R3 /OUT /RC 10k
+XU1 /RC 0 C2012X7R1E105K125AB_p
+R2 /OUT /INP 10k
+R1 /CTRL /INP 10k
+V1 /CTRL 0 {VCTRL}
+R4 /OUT 0 10k
+.end
